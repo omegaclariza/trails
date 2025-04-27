@@ -8,14 +8,10 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $data = [
-            'nama' => 'Doraemon',
-            'pekerjaan' => 'Developer',
-        ];
 
-        return view('home')->with($data);
+        return view('home');
     }
-    
+
     public function contact()
     {
         return view('contact');
