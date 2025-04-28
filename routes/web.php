@@ -9,6 +9,8 @@ use App\Http\Controllers\Tempat_ibadahController;
 use App\Http\Controllers\indexController;
 use App\Http\Controllers\Trails_view;
 use Illuminate\Support\Facades\Blade;
+use App\Http\Controllers\ProductController;
+
 
 //Route::get('/', function () {
 //    return view('welcome');
@@ -44,3 +46,4 @@ Route::get('/Trails_view', [TrailsController::class, 'tampilkan']);
 Route::get('Tempat_ibadahview', [Tempat_ibadahController::class, 'tampilkan']);
 Route::get('Tempat_ibadahview', [index_Controller::class, 'tampilkan']);
 Route::get('Trails_view', [TrailsController::class,  'tampilkan' ]);
+Route::get('/Product', [ProductController::class, 'index']);
