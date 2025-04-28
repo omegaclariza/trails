@@ -8,6 +8,7 @@ use App\Http\Controllers\TrailsController;
 use App\Http\Controllers\Tempat_ibadahController;
 use App\Http\Controllers\indexController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProductController;
 //Route::get('/', function () {
 //    return view('welcome');
 // });
@@ -42,3 +43,4 @@ Route::get('/Trails_view', [TrailsController::class, 'tampilkan']);
 Route::get('Tempat_ibadahview', [Tempat_ibadahController::class, 'tampilkan']);
 Route::get('Tempat_ibadahview', [index_Controller::class, 'tampilkan']);
 Route::get('/login', [LoginController::class, 'index']);
+Route::get('/list_product', [ProductController::class, 'showProductList']);
