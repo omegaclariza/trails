@@ -35,6 +35,11 @@ Route::prefix('admin')->group(function () {
     Route::get('/users', function () {
         return 'Admin Users';
     });
+
+});
+
+Route::get('/trails', function () {
+    return view('pages.home');
 });
 
 //Route::get('/listbarang/{id}/{nama}', function($id, $nama){
