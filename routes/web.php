@@ -7,17 +7,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TrailsController;
 use App\Http\Controllers\Tempat_ibadahController;
 use App\Http\Controllers\indexController;
-<<<<<<< HEAD
+
 use App\Http\Controllers\Trails_view;
 use Illuminate\Support\Facades\Blade;
 use App\Http\Controllers\ProductController;
-
-=======
-//use App\Http\Controllers\LoginController;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\PageController;
->>>>>>> ef6c8e4634c82768d3845f5f943bc29f6fd6639a
-
 //Route::get('/', function () {
 //    return view('welcome');
 // });
@@ -56,11 +49,6 @@ Route::get('/listbarang/{id}/{nama}', [ListBarangController::class, 'tampilkan']
 Route::get('/Trails_view', [TrailsController::class, 'tampilkan']);
 Route::get('Tempat_ibadahview', [Tempat_ibadahController::class, 'tampilkan']);
 Route::get('Tempat_ibadahview', [index_Controller::class, 'tampilkan']);
-<<<<<<< HEAD
 Route::get('Trails_view', [TrailsController::class,  'tampilkan' ]);
 Route::get('/Product', [ProductController::class, 'index']);
-=======
-//Route::get('/login', [LoginController::class, 'index']);
-Route::get('/list_product', [ProductController::class, 'showProductList']);
-Route::get('/pages.home', [PageController::class, 'index']);
->>>>>>> ef6c8e4634c82768d3845f5f943bc29f6fd6639a
+
