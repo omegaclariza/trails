@@ -34,6 +34,10 @@ Route::prefix('admin')->group(function () {
     Route::get('/users', function () {
         return 'Admin Users';
     });
+
+    Route::get('/sejarah', function () {
+        return view('sejarah');
+    });
 });
 
 //Route::get('/listbarang/{id}/{nama}', function($id, $nama){
@@ -47,3 +51,4 @@ Route::get('Tempat_ibadahview', [index_Controller::class, 'tampilkan']);
 Route::get('/login', [LoginController::class, 'index']);
 Route::get('/list_product', [ProductController::class, 'showProductList']);
 Route::get('/ziarah', [ZiarahController::class, 'index']);
+
